@@ -53,7 +53,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "1500",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -61,13 +61,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/spend",
+					"raw": "localhost:8080/spend/1500",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"spend"
+						"spend",
+						"1500"
 					]
 				}
 			},
@@ -80,7 +81,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"payer\":\"AmFam\",\r\n\"points\":\"-500\",\r\n\"timestamp\":\"2022-11-02T14:00:00Z\"}",
+					"raw": "{\"payer\":\"DANNON\",\r\n\"points\":1000,\r\n\"timestamp\":\"2020-11-02T14:00:00Z\"}",
 					"options": {
 						"raw": {
 							"language": "json"
