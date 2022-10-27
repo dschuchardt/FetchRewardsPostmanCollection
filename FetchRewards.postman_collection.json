@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "182f8a5e-3947-402d-866d-649714642a77",
+		"name": "FetchRewards",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23995542"
+	},
+	"item": [
+		{
+			"name": "allTransactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "balances",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/balances/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"balances",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "spendPoints",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "1500",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/spend",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addTransaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"payer\":\"AmFam\",\r\n\"points\":\"-500\",\r\n\"timestamp\":\"2022-11-02T14:00:00Z\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/addTransaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addTransaction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
